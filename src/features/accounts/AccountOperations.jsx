@@ -14,9 +14,10 @@ function AccountOperations() {
 
   function handleDeposit() {
     if (!depositAmount) return;
-    dispatch(deposite(depositAmount, currency));
+    // dispatch(deposite(depositAmount, currency));
+    dispatch(deposite(depositAmount));
     setDepositAmount('');
-    setCurrency('USD');
+    // setCurrency('USD');
   }
 
   function handleWithdrawal() {
